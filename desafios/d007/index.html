@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem flexível</title>
+    <link rel="icon" href="imagens/favicon (1).ico">
+</head>
+<body>
+    <h1>Imagem flexível</h1>
+    <p>Opa, ela muda de tamanho mesmo &#x1F92A</p>
+    <!--<img src="imagens/paisagem-p.png" alt="" sizes="max-width:320px">
+    <img src="imagens/paisagem-m.png" alt="">
+    <img src="imagens/paisagem-g.png" alt="">
+    é uma imagem com várias fontes-->
+    <picture>
+        <source media="(max-width:500px)" srcset="imagens/paisagem-p.png">
+        <source media="(max-width:1000px)" srcset="imagens/paisagem-m.png">
+        <img src="imagens/paisagem-g.png" alt="">
+    </picture>
+   
+</body>
+</html>
